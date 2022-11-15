@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+}
+
+.box>a {
+  text-decoration: none;
+  border: 6px solid rgb(194, 220, 211);
+  padding: 20px;
+  background-color: rgb(105, 173, 240);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.list {
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  list-style-type: none;
+  position: absolute;
+  left: -150px;
+  top: -20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+}
+ 
+.box:nth-child(1):hover .list {
+  display: block;
+}
+
+
+.item {
+  padding: 5px 20px;
+  min-width: 150px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.item:hover {
+  background-color: rgb(194, 220, 211);
+}
